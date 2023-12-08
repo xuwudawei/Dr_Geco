@@ -24,7 +24,7 @@ export async function POST(req : Request) {
         if (text){
           await User.findByIdAndUpdate({_id:_id},{prompts: user.prompts+1})
           const responseGrammar = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4",
             messages: [
               {
                 "role": "system",
@@ -61,7 +61,7 @@ export async function POST(req : Request) {
         if (text){
           await User.findByIdAndUpdate({_id:_id},{prompts: user.prompts+1})
           const responseGrammar = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4",
             messages: [
               {
                 "role": "system",
@@ -98,7 +98,7 @@ export async function POST(req : Request) {
         if (text){
           await User.findByIdAndUpdate({_id:_id},{prompts: user.prompts+1})
           const responseGrammar = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4",
             messages: [
               {
                 "role": "system",

@@ -99,14 +99,14 @@ const Doc: React.FC<DocsProps>= ({params}) => {
             />
       </div>
       <div className={styles.doc__suggestions}>
-        <h5 className={styles.doc__suggestions__title}>All Suggestions</h5>
-        <button title="Click To Check Grammar" onClick={handleCorrection} className={styles.doc__suggestions__btn__red}>Check Correct</button>
-        <button title="Double Click Word And Check" onClick={handleSynonyms} className={styles.doc__suggestions__btn}>Check Synonyms</button>
-        <button title="Click To Translate Text To Your Selected Language" onClick={handleTranslate} className={styles.doc__suggestions__btn__green}>Translate to Your Language</button>
+        <h5 className={styles.doc__suggestions__title}>Suggestions from Dr. Geco</h5>
+        <button title="Click To Check Grammar" onClick={handleCorrection} className={styles.doc__suggestions__btn__red}>Click here to Check Correctness</button>
+        {/* <button title="Double Click Word And Check" onClick={handleSynonyms} className={styles.doc__suggestions__btn}>Check Synonyms</button>
+        <button title="Click To Translate Text To Your Selected Language" onClick={handleTranslate} className={styles.doc__suggestions__btn__green}>Translate to Your Language</button> */}
         <div className={styles.doc__suggestions__active}>
           {synonymsLoading ?  <CircularProgress style={{margin: '5rem auto 1rem auto'}}/> : wordSuggest && <SynonymsWords text={wordSuggest} setWordSuggest={setWordSuggest}/>}
           {translateLoading ?  <CircularProgress style={{margin: '5rem auto 1rem auto'}}/> : translateText && <TranslateText language={document.language} setTranslate={setTranslateText}/>}
-          {correctLoading ?  <CircularProgress style={{margin: '5rem auto 1rem auto'}}/> : (correct ? <><img className={styles.doc__suggestions__active__img} src="https://baza-wiedzy.bhpin.pl/wp-content/uploads/2023/05/undraw_My_password_re_ydq7.png" alt="correct" /><h5 className={styles.doc__suggestions__active__message}>No Correction Your Grammar is Good!</h5></> : <CorrectText text={textSuggest as string} mistakeText={text as string} setMistakeText={setText} setCorrect={setCorrect} setText={setTextSuggest}/>)}
+          {correctLoading ?  <CircularProgress style={{margin: '5rem auto 1rem auto'}}/> : (correct ? <><img className={styles.doc__suggestions__active__img} src="https://baza-wiedzy.bhpin.pl/wp-content/uploads/2023/05/undraw_My_password_re_ydq7.png" alt="correct" /><h5 className={styles.doc__suggestions__active__message}>No Corrections needed! Your sentences are great!</h5></> : <CorrectText text={textSuggest as string} mistakeText={text as string} setMistakeText={setText} setCorrect={setCorrect} setText={setTextSuggest}/>)}
         </div>
       </div>
       </DocumentContext.Provider>

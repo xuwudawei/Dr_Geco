@@ -25,9 +25,9 @@ export const PlansList:PlansListType[] = [
     planFunctions: ['10000 prompts','Everything in Free'],
     },
     {
-    plan: 'buisness',
-    header: 'FOR BUISNESS',
-    planName: 'Buisness',
+    plan: 'business',
+    header: 'FOR BUSINESS',
+    planName: 'Business',
     desc: 'Features for teams, organizations, and enterprises',
     btnName: 'Business Plan',
     planFunctions: ['20000 prompts','Everything in Premium'],

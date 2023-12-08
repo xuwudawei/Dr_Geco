@@ -6,21 +6,21 @@ const Footer:React.FC = ()=>{
    return <div className={styles.footer__container}>
             <div className={styles.footer}>
                 <ul>
-                    <h1 className={styles.footer__header}>Get Grammarly</h1>
-                    <li className={styles.footer__option}>Grammarly for Your Desktop</li>
-                    <li className={styles.footer__option}>Grammarly for Windows</li>
-                    <li className={styles.footer__option}>Grammarly for Mac</li>
-                    <li className={styles.footer__option}>Grammarly Browser Extension</li>
-                    <li className={styles.footer__option}>Grammarly for Chrome</li>
-                    <li className={styles.footer__option}>2023 © Grammarly Inc.</li>
+                    <h1 className={styles.footer__header}>Get Dr. Geco</h1>
+                    <li className={styles.footer__option}>Dr. Geco for Your Desktop</li>
+                    <li className={styles.footer__option}>Dr. Geco for Windows</li>
+                    <li className={styles.footer__option}>Dr. Geco for Mac</li>
+                    <li className={styles.footer__option}>Dr. Geco Browser Extension</li>
+                    <li className={styles.footer__option}>Dr. Geco for Chrome</li>
+                    <li className={styles.footer__option}>2023 © Dr. Geco Inc.</li>
                 </ul>
                 <ul>
                     <h1 className={styles.footer__header}>Learn More</h1>
                     <li className={styles.footer__option}>Plans</li>
-                    <li className={styles.footer__option}>Grammarly Premium</li>
-                    <li className={styles.footer__option}>Grammarly Business</li>
-                    <li className={styles.footer__option}>Grammarly for Education</li>
-                    <li className={styles.footer__option}>GrammarlyGO</li>
+                    <li className={styles.footer__option}>Dr. Geco Premium</li>
+                    <li className={styles.footer__option}>Dr. Geco Business</li>
+                    <li className={styles.footer__option}>Dr. Geco for Education</li>
+                    <li className={styles.footer__option}>Dr. Geco GO</li>
                 </ul>
                 <ul>
                     <h1 className={styles.footer__header}>Features</h1>

@@ -18,7 +18,7 @@ const GrammarlyStartSection:React.FC<GrammarlyStartSectionProps> = ({text,title,
             <h1 className={styles.start__left__heading}>{title}</h1>
             <p className={styles.start__left__note}>{text}</p>
             <div>
-                <button className={styles.start__left__register}><Link href='/register' style={{textDecoration:'none',color:'white'}}>Get Grammarly it's free</Link></button>
+                <button className={styles.start__left__register}><Link href='/register' style={{textDecoration:'none',color:'white'}}>Get Dr. Geco it's free</Link></button>
                 <button className={styles.start__left__login}><Link href='/login' style={{textDecoration:'none',color:'black'}}>Log in</Link></button>
             </div>
             <p data-testid='policy' className={styles.start__left__policy}>By signing up, you agree to the <Link href='/'>Terms and Conditions</Link> and <Link href='/'>Privacy Policy</Link>. California residents, see our <Link href='/'>CA Privacy Notice.</Link></p>

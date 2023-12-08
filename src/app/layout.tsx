@@ -7,10 +7,10 @@ import './config.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Grammarly',
-  description: 'Grammarly for writing',
-}
+// export const metadata: Metadata = {
+//   title: 'Grammarly',
+//   description: 'Grammarly for writing',
+// }
 
 export default function RootLayout({
   children,

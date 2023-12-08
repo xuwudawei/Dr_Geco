@@ -37,7 +37,7 @@ const ForWork: React.FC=()=>{
     return <div className={styles.forwork}>
         <Nav />
         <GrammarlyStartSection title={section.title} text={section.text} content={section.content} src={section.src} bgColor={section.bgColor} color={section.color}/>
-        <h3 className={styles.forwork__work__heading}>Grammarly Works Where You Do</h3>
+        <h3 className={styles.forwork__work__heading}>Dr. Geco Works Where You Do</h3>
         <p className={styles.forwork__work__info}>Put your best foot forward in every message and document you write.</p>
         <div className={styles.forwork__icon}>
             {Imgs.map(img=><img src={img} alt='img icon' loading='lazy'/>)}
