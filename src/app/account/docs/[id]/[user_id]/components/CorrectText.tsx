@@ -7,21 +7,29 @@ interface CorrectTextProps {
     setMistakeText: React.Dispatch<React.SetStateAction<undefined | string | Element>>
     setText: React.Dispatch<React.SetStateAction<undefined | string >>
     mistakeText: string
-    setCorrect:React.Dispatch<React.SetStateAction<boolean>>
+    setCorrect: React.Dispatch<React.SetStateAction<boolean>>
+    //add a function to clear the text after the user accepts the correction below
+    clearField: React.Dispatch<React.SetStateAction<undefined | string>> 
 }
 
 const CorrectText:React.FC<CorrectTextProps> = ({text,setText,setMistakeText,mistakeText,setCorrect}) => {
     const refCorrectText=useRef<any>(null)
-    useEffect(()=>{
-        refCorrectText.current.innerHTML=`${text.slice(0,500)}...`
-    },[])
+    useEffect(() => {
+        refCorrectText.current.innerHTML = `${text}`
+    }, [
+        
+    ])
     const handleCorrectTextAccept=():void=>{
         setMistakeText(text)
         setCorrect(true)
+        refCorrectText.current.innerHTML = ''
     }
     const handleCorrectTextDismiss=():void=>{
         setText(mistakeText)
         setCorrect(true)
+        //how to dismiss the entire component? after the user clicks on dismiss, the component should disappear
+        refCorrectText.current.innerHTML = ''
+        
     }
     return (
     <div className={styles.correct_text__container}>

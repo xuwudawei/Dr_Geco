@@ -10,8 +10,8 @@ const useAuth = ()=>{
 
     useEffect(()=>{
         setIsLoading(true)
-        axios.get('/api/user').then(({data})=>{
-            if(data.error){
+        axios.get('/api/user').then(({ data }) => {
+            if (data.error) {
                 setError('Your Are Not Authorized')
             }
             else{
