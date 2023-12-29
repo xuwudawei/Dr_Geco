@@ -40,13 +40,28 @@ Before you begin, ensure you have the following installed on your machine:
 
 2. Navigate to the project directory:
    ```bash
-   cd dr-geco
+   cd Dr_Geco
 3. Install dependencies:
    ```bash
    npm install
 4. Running the Application:
    ```bash
    npm run dev
+
+## Building the Application
+1. To build the application for production:
+   ```bash
+   npm run build
+
+## Running Tests
+1. To execute tests:
+   ```bash
+   npm test
+
+## Linting
+1. To lint the project:
+   ```bash
+   npm run lint
 
 ## Future Plans
 
