@@ -10,9 +10,6 @@ Welcome to the Dr. Geco App repository! This app is designed to provide users wi
 
 - **Grammar Checking:** The app integrates with the OpenAI API to provide grammar checking services, helping users improve the quality of their written content.
 
-- **Synonym Finder:** Users can explore synonyms for words, enhancing the vocabulary and language variety in their documents.
-
-- **Text Translation:** The app supports translation of text into various languages, making it useful for multilingual users.
 
 ## Tech Stack
 
@@ -26,6 +23,26 @@ Welcome to the Dr. Geco App repository! This app is designed to provide users wi
 
 - External APIs:
   - OpenAI API for grammar checking
+ 
+
+## Requirements
+
+Before you begin, ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v14.0.0 or higher)
+- [npm](https://www.npmjs.com/) (v7.0.0 or higher)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xuwudawei/Dr_Geco.git
+
+2. Navigate to the project directory:
+   cd dr-geco
+
+
+
 
 ## Future Plans
 
