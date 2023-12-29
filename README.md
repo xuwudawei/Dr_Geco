@@ -32,17 +32,21 @@ Before you begin, ensure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (v14.0.0 or higher)
 - [npm](https://www.npmjs.com/) (v7.0.0 or higher)
 
-## Installation
+## Installation and Running
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/xuwudawei/Dr_Geco.git
 
 2. Navigate to the project directory:
+   ```bash
    cd dr-geco
-
-
-
+3. Install dependencies:
+   ```bash
+   npm install
+4. Running the Application:
+   ```bash
+   npm run dev
 
 ## Future Plans
 
