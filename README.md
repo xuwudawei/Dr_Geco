@@ -22,7 +22,7 @@ Welcome to the Dr. Geco App repository! This app is designed to provide users wi
   - Next.js API routes
 
 - External APIs:
-  - OpenAI API for grammar checking
+  - Finetuned T5 ML Model with Flask API for grammar checking
  
 
 ## Requirements
